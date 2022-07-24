@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #344955#344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.BusinessConfirmationController">
+   <children>
+      
+      <Label layoutX="289.0" layoutY="42.0" prefHeight="56.0" prefWidth="641.0" text="Business Confirmation " textFill="#ffbd00">
+         <font>
+            <Font name="Bodoni MT Black" size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="BusTable" layoutX="264.0" layoutY="126.0" prefHeight="349.0" prefWidth="593.0" style="-fx-background-color: #E5E7E9;">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="251.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="341.0" text="Business Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="903.0" layoutY="368.0" mnemonicParsing="false" onAction="#Acception" prefHeight="38.0" prefWidth="96.0" style="-fx-background-color: #00ff44; -fx-background-radius: 30;" text="Accept">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font></Button>
+      <Button layoutX="903.0" layoutY="427.0" mnemonicParsing="false" onAction="#Rejection" prefHeight="38.0" prefWidth="96.0" style="-fx-background-color: #ff0606; -fx-background-radius: 30;" text="Reject">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font></Button>
+      <Button layoutX="37.0" layoutY="574.0" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #ff5b5d#ff5b5d; -fx-background-radius: 30;" text="Back">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

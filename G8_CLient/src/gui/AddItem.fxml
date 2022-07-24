@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #344955#344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddItemController">
+   <children>
+      
+      <Label layoutX="60.0" layoutY="26.0" prefHeight="46.0" prefWidth="216.0" text="New Item:" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="113.0" prefHeight="46.0" prefWidth="66.0" text="ID :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="197.0" prefHeight="46.0" prefWidth="66.0" text="Name :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="267.0" prefHeight="46.0" prefWidth="66.0" text="Type :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="339.0" prefHeight="46.0" prefWidth="66.0" text="Price :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Typecmb" layoutX="134.0" layoutY="274.0" prefHeight="32.0" prefWidth="194.0" />
+      <TextField fx:id="NameField" layoutX="134.0" layoutY="201.0" prefHeight="38.0" prefWidth="194.0" />
+      <TextField fx:id="PriceField" layoutX="134.0" layoutY="343.0" prefHeight="38.0" prefWidth="194.0" />
+      <Button layoutX="575.0" layoutY="495.0" mnemonicParsing="false" onAction="#Add" prefHeight="46.0" prefWidth="117.0" style="-fx-background-color: #50ff40; -fx-background-radius: 30;" text="Add" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="59.0" layoutY="495.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="46.0" prefWidth="118.0" style="-fx-background-color: #ff5b5d#ff5b5d; -fx-background-radius: 30;" text="Back" textAlignment="CENTER" textFill="#f2f4f4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextField fx:id="IDField" layoutX="134.0" layoutY="117.0" onMouseExited="#checkID" prefHeight="38.0" prefWidth="194.0" />
+      <Label fx:id="labelmsg" layoutX="53.0" layoutY="394.0" prefHeight="32.0" prefWidth="356.0" textFill="#ff2626">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <CheckBox fx:id="sizeflag" layoutX="398.0" layoutY="117.0" mnemonicParsing="false" onAction="#showSizeOptions" text="Different size" textFill="WHITE" />
+      <CheckBox fx:id="smallsize" layoutX="384.0" layoutY="160.0" mnemonicParsing="false" onAction="#addsmallsize" text="S" textFill="WHITE" />
+      <CheckBox fx:id="meduimsize" layoutX="486.0" layoutY="160.0" mnemonicParsing="false" onAction="#addmeduimsize" text="M" textFill="WHITE" />
+      <CheckBox fx:id="largesize" layoutX="579.0" layoutY="160.0" mnemonicParsing="false" onAction="#addlargesize" text="L" textFill="WHITE" />
+      <CheckBox fx:id="extrasize" layoutX="663.0" layoutY="160.0" mnemonicParsing="false" onAction="#addextrasize" text="XL" />
+      <CheckBox fx:id="degreeflag" layoutX="398.0" layoutY="230.0" mnemonicParsing="false" onAction="#adddegree" text="Different Dgree Of Doneness" textFill="WHITE" />
+      <CheckBox fx:id="differenttoppingflag" layoutX="398.0" layoutY="281.0" mnemonicParsing="false" onAction="#addtoppingsoption" text="Different toppings" textFill="WHITE" />
+      <TextField fx:id="txttoppingname" layoutX="398.0" layoutY="349.0" prefHeight="26.0" prefWidth="130.0" />
+      <Label fx:id="labelname" layoutX="398.0" layoutY="322.0" prefHeight="0.0" prefWidth="130.0" text="ADD your topping name" textFill="WHITE" />
+      <Label fx:id="labelprice" layoutX="547.0" layoutY="322.0" text="ADD your topping price" textFill="WHITE" />
+      <TextField fx:id="txttoppingprice" layoutX="547.0" layoutY="349.0" prefHeight="26.0" prefWidth="92.0" />
+      <Button fx:id="btnaddtopping" layoutX="693.0" layoutY="349.0" mnemonicParsing="false" onAction="#addtopping" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #50aaff #50aaff; -fx-background-radius: 30;" text="Add topping" />
+      <Label fx:id="labelmsg1" layoutX="448.0" layoutY="394.0" prefHeight="32.0" prefWidth="336.0" textFill="#ff2626">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtpricesmall" layoutX="430.0" layoutY="156.0" prefHeight="18.0" prefWidth="35.0" promptText="price">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField fx:id="txtpricemeduim" layoutX="529.0" layoutY="156.0" prefHeight="18.0" prefWidth="35.0" />
+      <TextField fx:id="txtpricelarge" layoutX="616.0" layoutY="156.0" prefHeight="18.0" prefWidth="35.0" />
+      <TextField fx:id="txtpriceextra" layoutX="703.0" layoutY="156.0" prefHeight="18.0" prefWidth="35.0" />
+      <Button fx:id="btnprices" layoutX="685.0" layoutY="188.0" mnemonicParsing="false" onAction="#addprices" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #50aaff; -fx-background-radius: 30;" text="Confirm prices" />
+      <Label fx:id="labelidstatus" layoutX="160.0" layoutY="168.0" prefHeight="18.0" prefWidth="159.0" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #344955#344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EmailVerificationController">
+   <children>
+      <Label fx:id="showlabel" layoutX="94.0" layoutY="195.0" prefHeight="60.0" prefWidth="503.0" textFill="#e5e7e9">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Label>
+      <Button fx:id="btnverify" layoutX="577.0" layoutY="263.0" mnemonicParsing="false" onAction="#VerifyCode" style="-fx-background-color: #00ee55; -fx-background-radius: 30;" text="Verify">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+      <TextField fx:id="txtcode" layoutX="213.0" layoutY="258.0" promptText="Enter Code here" style="-fx-background-radius: 30;">
+         <font>
+            <Font name="Bodoni MT Black" size="20.0" />
+         </font></TextField>
+      <Label layoutX="101.0" layoutY="225.0" />
+      <TextField fx:id="txtusername" layoutX="213.0" layoutY="139.0" promptText="Enter you username" style="-fx-background-radius: 30;">
+         <font>
+            <Font name="Bodoni MT Black" size="20.0" />
+         </font></TextField>
+      <Button fx:id="btncode" layoutX="552.0" layoutY="144.0" mnemonicParsing="false" onAction="#sendcode" style="-fx-background-color: #00aaaa; -fx-background-radius: 30;" text="Send Code">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+      <Label layoutX="194.0" layoutY="14.0" prefHeight="70.0" prefWidth="411.0" text="Email Verification" textFill="#ffbd00">
+         <font>
+            <Font name="Bodoni MT Black" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="showlabel1" layoutX="213.0" layoutY="331.0" prefHeight="25.0" prefWidth="226.0" textFill="#e5e7e9">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Label>
+   </children>
+</Pane>

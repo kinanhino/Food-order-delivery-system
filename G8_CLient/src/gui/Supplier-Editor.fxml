@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SupplierEditorController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #344955;" VBox.vgrow="ALWAYS">
+         <children>
+            
+            <Button id="LogOutBurron" fx:id="btnlogout" layoutX="53.0" layoutY="559.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #ff5b5d#ff5b5d; -fx-background-radius: 30;" text="Log-Out" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelhello" layoutX="302.0" layoutY="40.0" prefHeight="50.0" prefWidth="670.0" text="Hello" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="64.0" />
+               </font>
+            </Label>
+            <Button fx:id="editmenubutton" layoutX="433.0" layoutY="214.0" mnemonicParsing="false" onAction="#EditMenuBtn" prefHeight="299.0" prefWidth="317.0" style="-fx-background-color: #F0750F#F0750F; -fx-background-radius: 300;" text="Edit Menu" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Black" size="38.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelsupplierfor" layoutX="558.0" layoutY="131.0" prefHeight="27.0" prefWidth="506.0" textFill="#c8c5d3">
+               <font>
+                  <Font name="Bodoni MT Black" size="22.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#160d63">
+                     <input>
+                        <Glow />
+                     </input>
+                  </InnerShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

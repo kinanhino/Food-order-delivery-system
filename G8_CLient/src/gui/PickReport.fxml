@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="760.0" style="-fx-background-color: #cff1ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PickReportController">
+   <children>
+      <Pane layoutX="-5.0" prefHeight="109.0" prefWidth="772.0" style="-fx-background-color: #78d2ff;">
+         <children>
+            <Label layoutX="313.0" layoutY="32.0" text="View Reports" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="branchLBL" layoutX="346.0" layoutY="75.0" text="for Northern Branch" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Button fx:id="incomeReportBTN" layoutX="41.0" layoutY="184.0" mnemonicParsing="false" onAction="#showIncomeReport" prefHeight="196.0" prefWidth="167.0" style="-fx-background-color: #00d0ff;" text="Income Report" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="orderReportBTN" layoutX="312.0" layoutY="184.0" mnemonicParsing="false" onAction="#showOrdersReport" prefHeight="196.0" prefWidth="167.0" style="-fx-background-color: #00d0ff;" text="Orders Report" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="activityReportBTN" layoutX="561.0" layoutY="184.0" mnemonicParsing="false" onAction="#showActivityReport" prefHeight="196.0" prefWidth="167.0" style="-fx-background-color: #00d0ff;" text="Activity Report" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnBTN" layoutX="33.0" layoutY="446.0" mnemonicParsing="false" onAction="#reurnBTN" style="-fx-background-color: #30d8ff;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="restaurantCMBX" layoutX="321.0" layoutY="125.0" onAction="#restaurantChosen" prefWidth="150.0" promptText="Choose Restaurant" style="-fx-background-color: #57dfff;" />
+   </children>
+</AnchorPane>

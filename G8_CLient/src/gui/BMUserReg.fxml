@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #344955#344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.BMUserRegController">
+   <children>
+    
+      <TableView fx:id="UserTable" layoutX="100.0" layoutY="192.0" onMouseClicked="#Select" prefHeight="267.0" prefWidth="974.0">
+        <columns>
+          <TableColumn fx:id="Id" prefWidth="74.0" text="ID" />
+          <TableColumn fx:id="Fname" prefWidth="118.0" text="First Name" />
+            <TableColumn fx:id="Lname" prefWidth="123.0" text="Last Name" />
+            <TableColumn fx:id="Username" prefWidth="123.0" text="Username" />
+            <TableColumn fx:id="Pass" prefWidth="123.0" text="Password" />
+            <TableColumn fx:id="email" prefWidth="130.0" text="Email" />
+            <TableColumn fx:id="phone" prefWidth="150.0" text="Phone Number" />
+            <TableColumn fx:id="role" prefWidth="132.0" text="Role" />
+        </columns>
+      </TableView>
+      <Label layoutX="453.0" layoutY="23.0" prefHeight="50.0" prefWidth="290.0" text="User Approval " textFill="#ffbd00">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SearchField" layoutX="100.0" layoutY="129.0" onKeyTyped="#Search" promptText="Enter ID " style="-fx-background-color: #E5E7E9; -fx-background-radius: 30;">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></TextField>
+      <Button layoutX="1092.0" layoutY="597.0" mnemonicParsing="false" onAction="#Accept" prefHeight="39.0" prefWidth="80.0" style="-fx-background-radius: 50; -fx-background-color: #00FF44;" text="Accept">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+      <Button layoutX="20.0" layoutY="597.0" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="80.0" style="-fx-background-radius: 50; -fx-background-color: #FF0606;" text="Back">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+      <TextField fx:id="w4cField" layoutX="886.0" layoutY="476.0" onMouseExited="#CheckW4C" promptText="Add W4C Code" style="-fx-background-color: #E5E7E9; -fx-background-radius: 30;">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></TextField>
+      <Label fx:id="errlbl" layoutX="100.0" layoutY="505.0" prefHeight="26.0" prefWidth="438.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PaymentField" layoutX="886.0" layoutY="519.0" promptText="Payment Limit " style="-fx-background-color: #E5E7E9; -fx-background-radius: 30;">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></TextField>
+      <Label fx:id="w4clbl" layoutX="763.0" layoutY="482.0" prefHeight="26.0" prefWidth="80.0" text="W4C Code :" textFill="WHITE" />
+      <Label fx:id="Paymentlbl" layoutX="763.0" layoutY="521.0" prefHeight="26.0" prefWidth="91.0" text="Payment Limit :" textFill="WHITE" />
+   </children>
+</AnchorPane>

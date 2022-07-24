@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ActivityReportController">
+   <children>
+      <Pane layoutX="-12.0" layoutY="-4.0" prefHeight="146.0" prefWidth="708.0" style="-fx-background-color: #78d2ff;">
+         <children>
+            <Label layoutX="257.0" layoutY="28.0" text="Activity Report" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="restaurantNameLBL" layoutX="288.0" layoutY="82.0" text="for Shawatena restaurant" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Button fx:id="exportBTN" layoutX="613.0" layoutY="556.0" mnemonicParsing="false" style="-fx-background-color: #30d8ff;" text="Export" textFill="WHITE" />
+      <Button fx:id="returnBTN" layoutX="32.0" layoutY="556.0" mnemonicParsing="false" onAction="#returnToPickReport" style="-fx-background-color: #30d8ff;" text="Return" textFill="WHITE" />
+      <Label fx:id="monthLBL" layoutX="329.0" layoutY="163.0" text="Jan" />
+      <Button fx:id="prevMonthBTN" layoutX="284.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToPrevMonth" text="&lt;" />
+      <Button fx:id="nextMonthBTN" layoutX="384.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToNextMonth" text="&gt;" />
+      <PieChart fx:id="activityPieChart" layoutX="136.0" layoutY="209.0" prefHeight="323.0" prefWidth="422.0" title="On Time vs. Delay" />
+   </children>
+</AnchorPane>

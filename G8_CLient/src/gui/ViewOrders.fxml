@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="783.0" prefWidth="1288.0" style="-fx-background-color: #344955#344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewOrdersController">
+   <children>
+      <Label fx:id="labelres" layoutX="380.0" layoutY="20.0" prefHeight="66.0" prefWidth="511.0" textFill="#ffbd00">
+         <font>
+            <Font name="Bodoni MT Black" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="54.0" prefHeight="46.0" prefWidth="422.0" text="Orders To Be Working On" textFill="#d7dbdd">
+         <font>
+            <Font name="Bodoni MT Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="373.0" prefHeight="46.0" prefWidth="422.0" text="Orders Working On" textFill="#d7dbdd">
+         <font>
+            <Font name="Bodoni MT Black" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableorders1" layoutX="43.0" layoutY="100.0" onMouseClicked="#getReadyOrder" prefHeight="246.0" prefWidth="518.0">
+        <columns>
+          <TableColumn fx:id="colid1" prefWidth="75.0" style="-fx-background-color: #ffbd00;" text="OrderId" />
+          <TableColumn fx:id="coltime1" prefWidth="176.8000030517578" style="-fx-background-color: #ffbd00;" text="OrderTime" />
+            <TableColumn fx:id="coldelivery1" prefWidth="156.0" style="-fx-background-color: #ffbd00;" text="Delivery Type" />
+            <TableColumn fx:id="colprice1" prefWidth="110.4000244140625" style="-fx-background-color: #ffbd00;" text="OrderPrice" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableorders2" layoutX="43.0" layoutY="434.0" onMouseClicked="#getWorkingOrder" prefHeight="246.0" prefWidth="518.0">
+         <columns>
+            <TableColumn fx:id="colid2" prefWidth="75.0" style="-fx-background-color: #ffbd00;" text="OrderId" />
+            <TableColumn fx:id="coltime2" prefWidth="176.8000030517578" style="-fx-background-color: #ffbd00;" text="OrderTime" />
+            <TableColumn fx:id="coldelivery2" prefWidth="156.0" style="-fx-background-color: #ffbd00;" text="Delivery Type" />
+            <TableColumn fx:id="colprice2" prefWidth="110.4000244140625" style="-fx-background-color: #ffbd00;" text="OrderPrice" />
+         </columns>
+      </TableView>
+      <Button layoutX="575.0" layoutY="534.0" mnemonicParsing="false" onAction="#FinishOrder" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #00ff55; -fx-background-radius: 30;" text="FINISH ORDER">
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="575.0" layoutY="188.0" mnemonicParsing="false" onAction="#StartWorkingOnOrder" prefHeight="46.0" prefWidth="139.0" style="-fx-background-color: #00bb44; -fx-background-radius: 30;" text="START WORKING ">
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font>
+      </Button>
+      <Line fx:id="line" endX="-100.0" endY="534.0" layoutX="825.0" layoutY="208.0" startX="-100.0" startY="-82.0999984741211" />
+      <Label fx:id="labelitems" layoutX="762.0" layoutY="119.0" prefHeight="46.0" prefWidth="422.0" text="Items For Order" textFill="#d7dbdd">
+         <font>
+            <Font name="Bodoni MT Black" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableitems" layoutX="733.0" layoutY="178.0" onMouseClicked="#getItem" prefHeight="218.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="colname" prefWidth="90.0" style="-fx-background-color: #ffbd00;" text="ItemName" />
+          <TableColumn fx:id="colsize" prefWidth="73.0" style="-fx-background-color: #ffbd00;" text="Size" />
+            <TableColumn fx:id="coldeg" prefWidth="157.0" style="-fx-background-color: #ffbd00;" text="DegreeOfDoneness" />
+            <TableColumn fx:id="colother" prefWidth="126.0" style="-fx-background-color: #ffbd00;" text="Other" />
+            <TableColumn fx:id="colnum" prefWidth="93.0" style="-fx-background-color: #ffbd00;" text="Quantity" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelitem" layoutX="791.0" layoutY="411.0" prefHeight="46.0" prefWidth="463.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="68.0" layoutY="712.0" mnemonicParsing="false" onAction="#Back" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #ff5b5d#ff5b5d; -fx-background-radius: 30;" text="BACK">
+         <font>
+            <Font name="Bodoni MT Black" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

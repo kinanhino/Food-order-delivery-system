@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HRMScreenController">
+  <children>
+
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #17202A;" VBox.vgrow="ALWAYS">
+         <children>
+           
+            <Button id="NewOrderButton" fx:id="BusinessAcc" layoutX="183.0" layoutY="207.0" mnemonicParsing="false" onAction="#AskForBusAcc" prefHeight="236.0" prefWidth="293.0" style="-fx-background-color: #F0750F#F0750F #F0750F#F0750F; -fx-background-radius: 50;" text="Ask for Premission" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Black" size="24.0" />
+               </font>
+            </Button>
+            <Button id="UserApprovalButton" fx:id="UserApprove" layoutX="588.0" layoutY="207.0" mnemonicParsing="false" onAction="#OpenUsersList" prefHeight="236.0" prefWidth="293.0" style="-fx-background-color: #F0750F#F0750F #F0750F#F0750F; -fx-background-radius: 50;" text="User Approval" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Black" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelhello" layoutX="244.0" layoutY="27.0" prefHeight="50.0" prefWidth="668.0" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="44.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#160d63">
+                     <input>
+                        <Glow />
+                     </input>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <Label layoutX="165.0" layoutY="98.0" prefHeight="58.0" prefWidth="716.0" text="Human Resources Manager" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Black" size="48.0" />
+               </font>
+            </Label>
+            <Label fx:id="errlabel" layoutX="93.0" layoutY="483.0" prefHeight="48.0" prefWidth="495.0" textFill="#f23636">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button id="LogOutBurron" fx:id="logout" layoutX="21.0" layoutY="37.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #ff5b5d #ff5b5d; -fx-background-radius: 15;" text="Log-Out" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

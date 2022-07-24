@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="204.0" prefWidth="466.0" style="-fx-background-color: #344955#344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddToppingMsgController">
+   <children>
+      <Label fx:id="label" layoutX="32.0" layoutY="36.0" prefHeight="42.0" prefWidth="402.0" text="Label" textFill="WHITE" />
+      <Button layoutX="70.0" layoutY="132.0" mnemonicParsing="false" onAction="#no" prefHeight="42.0" prefWidth="116.0" style="-fx-background-color: #ff5b5d#ff5b5d;" text="NO" />
+      <Button layoutX="281.0" layoutY="128.0" mnemonicParsing="false" onAction="#yes" prefHeight="42.0" prefWidth="116.0" style="-fx-background-color: #00ff55;" text="YES" />
+   </children>
+</AnchorPane>

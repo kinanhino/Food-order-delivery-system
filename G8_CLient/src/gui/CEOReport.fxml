@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CEOReportController">
+   <children>
+      <Pane layoutX="-12.0" layoutY="-4.0" prefHeight="146.0" prefWidth="1024.0" style="-fx-background-color: #78d2ff;">
+         <children>
+            <Label layoutX="375.0" layoutY="41.0" text="Restaurants statistics" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="428.0" layoutY="86.0" text="for the last year-quarter" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="returnBTN" layoutX="32.0" layoutY="511.0" mnemonicParsing="false" onAction="#returnToCEOScreen" style="-fx-background-color: #30d8ff;" text="Return" textFill="WHITE" />
+      <BarChart fx:id="ordersBarChart" layoutX="14.0" layoutY="163.0" prefHeight="324.0" prefWidth="489.0" title="Restaurants Orders Report">
+        <xAxis>
+          <CategoryAxis fx:id="orestAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="ordersAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="incomeBarChart1" layoutX="502.0" layoutY="163.0" prefHeight="324.0" prefWidth="489.0" title="Restaurants Income Report">
+         <xAxis>
+            <CategoryAxis fx:id="irestAxis1" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="incomeAxis1" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

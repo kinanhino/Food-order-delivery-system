@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1288.0" scaleShape="false" style="-fx-background-color: #344955#344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ResMenuForCustomersController">
+   <children>
+      <Label fx:id="labelRes" layoutX="318.0" layoutY="14.0" prefHeight="60.0" prefWidth="588.0" textFill="#f0750f">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ItemsTable" layoutX="28.0" layoutY="128.0" onMouseClicked="#GetSeletedItem" prefHeight="203.0" prefWidth="728.0">
+        <columns>
+          <TableColumn fx:id="IDCol" prefWidth="139.0" text="ID" />
+          <TableColumn fx:id="NameCol" prefWidth="196.0" text="Item Name" />
+            <TableColumn fx:id="TypeCol" prefWidth="197.0" text="Type" />
+            <TableColumn fx:id="PriceCol" prefWidth="195.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="addtocartbtn" layoutX="776.0" layoutY="292.0" mnemonicParsing="false" onAction="#AddItem" prefHeight="21.0" prefWidth="146.0" style="-fx-background-color: #00ff55;" text="Add To Cart">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="695.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="21.0" prefWidth="73.0" style="-fx-background-color: #ff5b5d#ff5b5d;" text="Back" textFill="#f2f4f4">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelerr" layoutX="244.0" layoutY="697.0" prefHeight="27.0" prefWidth="702.0" style="-fx-background-color: #344955#344955;" textFill="#ff2626">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelsel" layoutX="245.0" layoutY="331.0" prefHeight="30.0" prefWidth="548.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CategoryList" layoutX="28.0" layoutY="88.0" onAction="#ShowRelevantItems" prefHeight="31.0" prefWidth="298.0" promptText="Choose Category" style="-fx-background-color: #dedede;" />
+      <Button fx:id="checkout" layoutX="1167.0" layoutY="676.0" mnemonicParsing="false" onAction="#payment" prefHeight="42.0" prefWidth="99.0" style="-fx-background-color: #00ffaa;" text="Checkout">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+      <Label layoutX="679.0" layoutY="650.0" prefHeight="42.0" prefWidth="187.0" text=" Quantity " textFill="#f0750f">
+         <font>
+            <Font name="Bodoni MT Black" size="24.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="qtybtn" editable="true" layoutX="794.0" layoutY="659.0" prefHeight="31.0" prefWidth="73.0" />
+      <TableView fx:id="OrderTable" layoutX="28.0" layoutY="416.0" onMouseClicked="#GetSelectedFromOrder" prefHeight="234.0" prefWidth="728.0">
+        <columns>
+          <TableColumn fx:id="ItemNameCol" prefWidth="99.0" text="ItemName" />
+          <TableColumn fx:id="ItemPriceCol" prefWidth="50.0" text="Price" />
+            <TableColumn fx:id="QtyCol" prefWidth="73.0" text="quantity" />
+            <TableColumn fx:id="SizeICol" prefWidth="72.0" text="Size" />
+            <TableColumn fx:id="LevelOfCoockingCol" prefWidth="129.0" text="LevelOfCoocking" />
+            <TableColumn fx:id="TopingsCol" minWidth="0.0" prefWidth="151.0" text="Topings" />
+            <TableColumn fx:id="DescriptionCol" prefWidth="153.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="28.0" layoutY="347.0" prefHeight="49.0" prefWidth="321.0" text="order preview" textFill="#f0750f">
+         <font>
+            <Font name="Bodoni MT Black" size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddQty" layoutX="884.0" layoutY="655.0" mnemonicParsing="false" onAction="#AddQtyBtn" prefHeight="30.0" prefWidth="38.0" style="-fx-background-color: #00ff55;" text="+">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="RemoveItem" layoutX="935.0" layoutY="655.0" mnemonicParsing="false" onAction="#RemoveItemBtn" prefHeight="30.0" prefWidth="38.0" style="-fx-background-color: #ee2326;" text="-">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="OrderLabel" layoutX="252.0" layoutY="664.0" prefHeight="21.0" prefWidth="403.0" textFill="WHITE" />
+      <Label fx:id="PriceLabel" layoutX="1137.0" layoutY="592.0" prefHeight="49.0" prefWidth="121.0" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

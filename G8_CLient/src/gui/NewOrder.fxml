@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NewOrderController">
+  <children>
+    <AnchorPane layoutY="242.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1288.0" style="-fx-background-color: #344955#344955;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button id="LogOutBurron" fx:id="backbutton" layoutX="52.0" layoutY="697.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #ff5b5d;" text="Back" textAlignment="CENTER">
+               <font>
+                  <Font name="Bauhaus 93" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="pickresturantlabel" layoutX="275.0" layoutY="269.0" text="Pick A Resturant" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Black" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="yorchoiselabel" layoutX="332.0" layoutY="363.0" text="Your Choise Is" textFill="#e5e8e8">
+               <font>
+                  <Font name="Bauhaus 93" size="39.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ResList" layoutX="624.0" layoutY="275.0" prefHeight="31.0" prefWidth="227.0" />
+            <RadioButton fx:id="homeradio" layoutX="289.0" layoutY="175.0" mnemonicParsing="false" onAction="#getHomeRestaurants" text="Home Branch " textFill="#f0750f">
+               <font>
+                  <Font name="Bodoni MT Black" size="24.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="allradio" layoutX="657.0" layoutY="175.0" mnemonicParsing="false" onAction="#getAllRestaurants" text="All Restaurants" textFill="#f0750f">
+               <font>
+                  <Font name="Bodoni MT Black" size="24.0" />
+               </font></RadioButton>
+            <Button fx:id="continuebutton" layoutX="724.0" layoutY="365.0" mnemonicParsing="false" onAction="#continuebutton" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: #F0750F#F0750F; -fx-background-radius: 300;" text="Continue">
+               <font>
+                  <Font name="Bodoni MT Black" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="383.0" layoutY="38.0" prefHeight="77.0" prefWidth="369.0" text="Let's Order" textFill="WHITE">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Label>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

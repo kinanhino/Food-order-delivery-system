@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #17202A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegisterSupplierController">
+   <children>
+      <Label layoutX="265.0" layoutY="14.0" prefHeight="56.0" prefWidth="613.0" text="Supplier Registeration " textFill="#ffbd00">
+         <font>
+            <Font name="Bodoni MT Black" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="587.0" layoutY="221.0" prefHeight="34.0" prefWidth="276.0" style="-fx-background-color: #E5E7E9;" text="Restaurant Details">
+         <font>
+            <Font name="Bodoni MT Black" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="605.0" mnemonicParsing="false" onAction="#CancelBtn" prefHeight="21.0" prefWidth="71.0" style="-fx-background-color: ff0606;" text="Back">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+      <Button layoutX="1043.0" layoutY="602.0" mnemonicParsing="false" onAction="#SaveBtn" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: #00ff44;" text="Save Supplier">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></Button>
+      <TextField fx:id="userid" layoutX="241.0" layoutY="140.0" promptText="ID" />
+      <TextField fx:id="fname" layoutX="241.0" layoutY="200.0" promptText="First Name" />
+      <TextField fx:id="lname" layoutX="241.0" layoutY="260.0" promptText="Last Name" />
+      <TextField fx:id="email" layoutX="241.0" layoutY="320.0" promptText="Email" />
+      <TextField fx:id="username" layoutX="241.0" layoutY="380.0" promptText="UserName" />
+      <TextField fx:id="pass" layoutX="241.0" layoutY="440.0" promptText="Password" />
+      <TextField fx:id="repass" layoutX="241.0" layoutY="500.0" promptText="Re-Password" />
+      <TextField fx:id="phone" layoutX="241.0" layoutY="560.0" promptText="Phone-Number" />
+      <TextField fx:id="w4c" layoutX="620.0" layoutY="140.0" promptText="W4C-Code" />
+      <TextField fx:id="resid" layoutX="613.0" layoutY="291.0" promptText="Resturant-ID" />
+      <TextField fx:id="resname" layoutX="613.0" layoutY="351.0" promptText="Resturant Name" />
+      <Label fx:id="Errlabel" layoutX="467.0" layoutY="553.0" prefHeight="45.0" prefWidth="358.0" textFill="#f54e4e">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
